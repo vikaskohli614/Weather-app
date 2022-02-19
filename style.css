@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+body{
+font-family: 'Open Sans', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0px;
+background: rgb(196, 192, 160);
+background-image: url('https://source.unsplash.com/random/1920x1080/?weather,landscape');
+background-size: 100%;
+background-repeat: no-repeat;
+font-size: 120%;
+}
+.card{
+background: #000000d0;
+color: white;
+padding: 2em;
+border-radius: 30px;
+width: 100%;
+max-width: 420px;
+margin: 1em;
+}
+.search{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.search button{
+margin: 0.8em;
+border-radius: 50%;
+border: none;
+height: 2.9em;
+width: 2.9em;
+cursor: pointer;
+}
+button:hover{
+background-color: #f1efef6b;
+}
+input.search_bar{
+border: none;
+outline: none;
+padding: 0.4em 1em;
+border-radius: 24px;
+font-family: inherit;
+font-size: 90%;
+width: calc(100% - 100px);
+}
+.temp{
+font-size: 170%;
+margin-bottom: 10px;
+}
+.description{
+text-transform: capitalize;
+}
+.box{
+display: flex;
+align-items: center;
+}
+
+.weather.loading{
+    visibility: hidden;
+}
+
+.weather.loading::after{
+    visibility: visible;
+    content: "Loading....";
+    color: white;
+    position: absolute;
+}
